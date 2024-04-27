@@ -1,0 +1,27 @@
+name: Run Tests on Push
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  test:
+    name: Run Java Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Build with Maven
+        run: mvn clean install
+
+      - name: Run Tests
+        run: mvn test
