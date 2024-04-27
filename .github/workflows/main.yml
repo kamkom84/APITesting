@@ -3,7 +3,6 @@ name: Run Tests on Push
 on:
   push:
     branches:
-      - main
       - master
 
 jobs:
@@ -18,10 +17,10 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '11'
+          java-version: '17'
 
       - name: Build with Maven
         run: mvn clean install
 
       - name: Run Tests
-        run: mvn test
+        run: test
