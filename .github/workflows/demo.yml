@@ -1,8 +1,8 @@
-name: demo-1
+name: hello-world
 'on': push
 jobs:
-  first-job:
-    runs-on: ubunty-latest
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: api-testing
-        run: echo "api-testing"
+      - name: my-step
+        run: echo "Hello World!"
