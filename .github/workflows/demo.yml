@@ -1,0 +1,8 @@
+name: demo-1
+'on': push
+jobs:
+  first-job:
+    runs-on: ubunty-latest
+    steps:
+      - name: api-testing
+        run: echo "api-testing"
