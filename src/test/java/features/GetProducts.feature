@@ -10,6 +10,6 @@ Feature: Get all products from the api
     When User passes the url in the request
     Then User verifies that the rate of the first product is <FirstProductRate>
       Examples:
-      | FirstProductRate |
-      | 3.9              |
+      | FirstProductRate|
+      | 3.9             |
 
