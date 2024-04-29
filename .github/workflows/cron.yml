@@ -2,11 +2,7 @@ name: api_test_cron_workflow
 on:
   schedule:
     - cron: '15 6 * * *'
-  push:
-    branches:
-      - master
-  workflow_dispatch: null
-jobs:
+  jobs:
   build:
     name: javaApiTest
     runs-on: ubuntu-latest
