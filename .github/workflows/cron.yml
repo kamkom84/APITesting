@@ -7,7 +7,7 @@ on:
     name: javaApiTest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-dept: 0
       - name: Set up JDK 11
