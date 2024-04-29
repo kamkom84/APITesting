@@ -1,4 +1,4 @@
-name: api-test
+name: api test
 on:
   push:
     branches:
