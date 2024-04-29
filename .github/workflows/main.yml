@@ -19,6 +19,3 @@ jobs:
 
       - name: Run api tests
         run: mvn clean test
-
-
-
