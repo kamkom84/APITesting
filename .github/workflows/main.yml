@@ -1,20 +1,24 @@
-name: Run Tests on Push
-'on':
+name: api-test
+on:
   push:
     branches:
       - master
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
 jobs:
-  test:
-    name: Run Java Tests
+  build:
+    name: javaApiTest
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Set up JDK 17
-        uses: actions/setup-java@v2
+      - uses: actions/checkout@v2
         with:
-          java-version: 17
-      - name: Build with Maven
-        run: mvn clean install
-      - name: Run Tests
-        run: mvn test
+          fetch-dept: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v1
+
+      -  name: Run unit test
+      - run: mvn clean test -Punit-test
+
