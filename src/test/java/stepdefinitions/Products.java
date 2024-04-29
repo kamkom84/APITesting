@@ -72,17 +72,17 @@ public class Products {
 
         httpRequest.body(requestParams.toString());
 
-
     }
 
-    @And("User passes the request body of the product title <ProductTitle>")
-    public void userPassesTheRequestBodyOfTheProductTitleProductTitle() {
+    @When("User passes the request body of the product title Shoes")
+    public void user_passes_the_request_body_of_the_product_title_shoes() {
 
         Response response = httpRequest.put("products");
         ResponseBody body = response.getBody();
 
         System.out.println(response.getStatusCode());
         System.out.println(body.asString());
+
     }
 }
 
