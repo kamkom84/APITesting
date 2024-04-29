@@ -1,7 +1,7 @@
 name: api_test_cron_workflow
 on:
   schedule:
-    - cron: '30 6 * * *'
+    - cron: '35 6 * * *'
   jobs:
   build:
     name: javaApiTest
