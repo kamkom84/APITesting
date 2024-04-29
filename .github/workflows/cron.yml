@@ -3,6 +3,7 @@ name: daily_report_workflow
 on:
   schedule:
     - cron: '50 7 * * *'
+  workflow_dispatch:
 
 jobs:
   api-test:
