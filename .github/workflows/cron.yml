@@ -1,5 +1,7 @@
 name: api_test_cron_workflow
 on:
+  schedule:
+    - cron: '15 6 * * *'
   push:
     branches:
       - master
