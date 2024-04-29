@@ -4,7 +4,7 @@ Feature: Insert product using POST API
     Given User hits the url of post product api endpoint
     When User passes the url in the request
     And User passes the request body of the product title <ProductTitle>
-    Then User should receive the response code as 200
+    Then User should receive the response code as 201
       Examples:
       | ProductTitle |
       | Shoes        |
