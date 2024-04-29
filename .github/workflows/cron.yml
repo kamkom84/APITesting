@@ -1,4 +1,4 @@
-name: api_test_workflow
+name: api_test_cron_workflow
 on:
   push:
     branches:
