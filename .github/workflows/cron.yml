@@ -2,7 +2,9 @@ name: daily_report_workflow
 
 on:
   schedule:
-    - cron: '05 8 * * *'
+    - branches:
+        - master
+    - cron: '5 * * * *'
   workflow_dispatch:
 
 jobs:
