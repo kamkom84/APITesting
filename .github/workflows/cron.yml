@@ -1,4 +1,4 @@
-name: daily-report
+name: daily_report_workflow
 
 on:
   schedule:
