@@ -2,7 +2,7 @@ name: api_test_daily_workflow
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch:
 
 jobs:
