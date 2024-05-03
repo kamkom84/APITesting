@@ -40,7 +40,7 @@ public class Products {
     public void user_should_receive_the_response_code_as(Integer int1) {
 
         ResponseCode = response.statusCode();
-        assertEquals(ResponseCode, 200);
+        assertEquals(ResponseCode, 20);
 
     }
 
