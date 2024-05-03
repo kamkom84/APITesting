@@ -6,5 +6,5 @@ Feature: Insert product using POST API
     And User passes the request body of the product title <ProductTitle>
     Then User should receive the response code as 20
       Examples:
-      | ProductTitle |
-      | Shoes        |
+      | ProductTitle  |
+      | ShoesK        |
