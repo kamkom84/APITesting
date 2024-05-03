@@ -8,6 +8,7 @@
           <option value="APITesting" />
           <option value="APITesting" />
           <option value="APITesting" />
+          <option value="APITesting" />
         </list>
       </option>
       <option name="ignoredPackages">
@@ -15,10 +16,12 @@
           <option value="commons-codec:commons-codec:1.11" />
           <option value="commons-io:commons-io:2.5" />
           <option value="org.apache.maven.shared:maven-shared-utils:3.2.1" />
+          <option value="org.codehaus.plexus:plexus-utils:2.0.4" />
         </list>
       </option>
       <option name="ignoredReasons">
         <list>
+          <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
           <option value="Not exploitable" />
