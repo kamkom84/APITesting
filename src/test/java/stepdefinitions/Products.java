@@ -14,7 +14,6 @@ import static org.junit.Assert.*;
 
 public class Products {
 
-
     public RequestSpecification httpRequest;
     public Response response;
     public int ResponseCode;
