@@ -1,4 +1,4 @@
-name: monthly_on_first_midnight
+name: test_on_midnight_monthly
 
 on:
   schedule:
