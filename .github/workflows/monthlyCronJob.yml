@@ -1,4 +1,4 @@
-name: api_test_monthly_on_first_month
+name: monthly_on_first_midnight
 
 on:
   schedule:
