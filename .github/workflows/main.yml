@@ -1,4 +1,4 @@
-name: api_test_workflow
+name: api_test_on_commit_and_push
 on:
   push:
     branches:

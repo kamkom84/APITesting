@@ -1,4 +1,4 @@
-name: api_test_daily_workflow
+name: api_test_every_midnight
 
 on:
   schedule:
