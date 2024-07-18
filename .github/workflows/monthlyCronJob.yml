@@ -1,0 +1,13 @@
+name: api_test_monthly_workflow
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: api-tests
+        run: echo "api test"
