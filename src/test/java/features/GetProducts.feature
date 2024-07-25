@@ -11,5 +11,5 @@ Feature: Get all products from the api
     Then User verifies that the rate of the first product is <FirstProductRate>
       Examples:
       | FirstProductRate|
-      | 3.90            |
+      | 3.9             |
 
